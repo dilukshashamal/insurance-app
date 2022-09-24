@@ -1,0 +1,54 @@
+.banner{
+    width: 100%;
+    position: relative;
+    color: var(--white);
+    overflow: hidden;
+
+    .title1{
+        &::before{
+            content: none;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        background-color: var(--dark-violet);
+        padding: 5rem 0;
+        position:relative;
+        justify-content: space-around;
+        align-items: center;
+
+        button{
+            margin-left: auto;
+            margin-right: 13rem;
+            top:1rem;
+            
+        }
+
+        @media(max-width:767px){
+            //Set the direction of the flexible items inside the <div> element in reverse order
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+
+            button{
+                margin-top: 2rem;
+                justify-content: center;
+                
+            }
+        }
+    }
+    img{
+        max-width: 40rem;
+        position:absolute;
+        right: 1rem;
+        top: 3rem;
+        z-index:99;
+        @media(max-width:767px){
+            max-width: 15rem;
+            top:0;
+        }
+        
+    }
+}

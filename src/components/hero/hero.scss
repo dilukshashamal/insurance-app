@@ -1,0 +1,122 @@
+.hero {
+    width: 100%;
+    background-color: var(--dark-violet);
+    color : var(--white);
+    padding: 10rem 0;
+    position:relative;
+    @media(max-width:767px){
+        padding: 0;
+    }
+
+
+    // wrapper class -->handle hero section img
+    &__wrapper{
+        
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        @media(max-width:767px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    //content handle section
+    &__content{
+        max-width: 150rem;
+        padding-right: 65rem;
+
+        @media(max-width:991px){
+            //rem is a relative unit related to the root font sizes
+            padding-top: 48rem;
+            max-width: 30rem;
+            padding-right: 4rem;
+            text-align: center;
+
+        }
+        @media(max-width:767px){
+            max-width: 100%;
+            padding: 8rem 0;
+            text-align: center;
+        }
+    }
+
+    //text class creation
+    &__text{
+        padding: 2rem 0;
+        // padding-right: 55rem;
+       
+
+    }
+
+    //image class creation
+    &__image{
+        position: absolute;
+        right: 0;
+        padding: 0 5rem;
+        
+        top: -1rem;
+        z-index:10;
+        img{
+            max-width:50rem;
+            @media(max-width:767px){
+                max-width: 100%;
+            }
+            
+        }
+
+        @media(max-width: 767px){
+            position: relative;
+            padding:0;
+        }
+        @media(max-width:991px){
+            top: 0;
+            padding-right:9rem ;
+        }
+
+    }
+
+
+
+
+    // img{
+    //     max-width: 60rem;
+
+    // }
+    .left-bottom-image,
+    .right-top-image{
+        img{
+            max-width: 15rem;
+            position: absolute;
+        }
+    }
+
+    .right-top-image{
+        img{
+            
+            right: -100px;;
+            top: 0;
+            max-width: 30rem;
+            z-index:99;
+            @media(max-width:767px){
+                max-width:15rem;
+                right:0;
+                bottom: -20rem;
+                top:auto;
+            }
+        }
+    }
+
+    .left-bottom-image{
+        @media(max-width:767px){
+            img{
+                bottom: 28.5rem;
+            }
+        }
+    }
+
+    .hero__text{
+        font-size: medium;
+        
+    }
+}

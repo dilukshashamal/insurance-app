@@ -1,0 +1,34 @@
+.create-form{
+    align-content: center;
+
+    .input-details{
+        display: block;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+        padding: 15px;
+        padding-top: 2rem;
+        font-size: medium;
+
+       fieldset{
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+       }
+
+       p {
+        color: #bf1650;
+      }
+      
+      p::before {
+        display: inline;
+        content: "⚠ ";
+      }
+
+       button{
+        background-color: aqua;
+       }
+    }
+}

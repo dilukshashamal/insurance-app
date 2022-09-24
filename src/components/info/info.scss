@@ -1,0 +1,36 @@
+.we-are-different{
+    width:100%;
+    padding-top: 10rem;
+    img{
+        max-width: 7.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        padding-top: 6rem;
+
+        h3{
+            padding: 1.5rem 0;
+            font-weight: 700;
+        }
+    
+        p{
+            padding: 0;
+        }
+        @media(max-width:767px){
+            text-align: center;
+            //Each column is equal. 1fr=25% of the available space.
+            grid-template-columns: repeat(1,1fr);
+
+            p{
+                max-width: 70%;
+                margin: auto;
+            }          
+        }
+        
+    }
+
+    
+}

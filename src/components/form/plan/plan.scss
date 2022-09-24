@@ -1,0 +1,41 @@
+.demoform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../../../images/form1.png");
+  background-size: cover;
+  background-position: center;
+
+  form{
+    background-color: white;
+    padding: 0pz 60px;
+    border-radius: 8px;
+
+    h1{
+        color:blue($color: #010419);
+        text-align: center;
+        
+    }
+    
+    button{
+        width:80%;
+        height: 30px;
+        font-size: large;
+        border: none;
+        border-radius: 7px;
+        background-color: #0c1faf;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top:10px;
+        margin-left: 28px;
+        margin-bottom: 9px;
+    }
+
+}
+}
